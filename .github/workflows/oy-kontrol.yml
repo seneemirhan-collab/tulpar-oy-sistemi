@@ -1,0 +1,28 @@
+name: TulparMC Günlük Oy Kontrolü
+
+on:
+  schedule:
+    - cron: "30 9 * * *"
+  workflow_dispatch:
+
+jobs:
+  vote-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Oy sitelerini kontrol et
+        run: |
+          echo "TulparMC Günlük Oy Kontrolü"
+          echo "Oyuncu: esmmer2047"
+          echo "Saat: 12:30 Türkiye"
+
+          echo "Minecraft-MP:"
+          echo "https://minecraft-mp.com/server/340731/vote/"
+
+          echo "Servers-MC:"
+          echo "https://www.servers-mc.net/server/tulparmc.196"
+
+          echo "TopMinecraftServers:"
+          echo "https://topminecraftservers.org/vote/40088"
+
+          echo "Kontrol tamamlandı."
